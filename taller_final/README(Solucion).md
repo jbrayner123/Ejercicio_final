@@ -387,7 +387,56 @@ El frontend estará disponible en: http://localhost:5173
 
 ## 📁 Estructura del Proyecto
 
-taller_final/ │ ├── backend/ │ ├── app/ │ │ ├── init.py │ │ ├── main.py # Punto de entrada de la API │ │ ├── models.py # Modelos (User, Node, Edge) │ │ ├── db.py # Configuración de base de datos │ │ ├── auth.py # JWT y autenticación │ │ └── routes/ │ │ ├── init.py │ │ ├── auth.py # Rutas de autenticación │ │ └── graph.py # Rutas de nodos, aristas y algoritmos │ │ │ ├── data/ │ │ ├── nodes.csv # Datos semilla de nodos │ │ └── edges.csv # Datos semilla de aristas │ │ │ ├── scripts/ │ │ └── load_seed.py # Script para cargar datos │ │ │ ├── .env # Variables de entorno (NO SUBIR A GIT) │ ├── .gitignore │ ├── requirements.txt # Dependencias Python │ └── pyproject.toml │ ├── frontend/ │ ├── src/ │ │ ├── components/ │ │ │ ├── Nodes.jsx # Gestión de nodos │ │ │ ├── Edges.jsx # Gestión de aristas │ │ │ ├── Algorithms.jsx # BFS y Dijkstra │ │ │ ├── CrudSection.css # Estilos para CRUD │ │ │ └── Algorithms.css # Estilos para algoritmos │ │ │ │ │ ├── pages/ │ │ │ ├── Login.jsx # Pantalla de login │ │ │ ├── Login.css │ │ │ ├── Home.jsx # Dashboard principal │ │ │ └── Home.css │ │ │ │ │ ├── api.js # Cliente HTTP (Axios) │ │ ├── App.jsx # Rutas de la aplicación │ │ ├── main.jsx # Punto de entrada React │ │ └── index.css # Estilos globales │ │ │ ├── public/ │ ├── .env # Variables de entorno (NO SUBIR A GIT) │ ├── .gitignore │ ├── index.html │ ├── package.json │ ├── package-lock.json │ └── vite.config.js │ ├── README.md # Este archivo └──
+\`\`\`
+taller_final/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py              # Punto de entrada de la API
+│   │   ├── models.py            # Modelos (User, Node, Edge)
+│   │   ├── db.py                # Configuración de base de datos
+│   │   ├── auth.py              # JWT y autenticación
+│   │   └── routes/
+│   │       ├── __init__.py
+│   │       ├── auth.py          # Rutas de autenticación
+│   │       └── graph.py         # Rutas de nodos, aristas y algoritmos
+│   ├── data/
+│   │   ├── nodes.csv            # Datos semilla de nodos
+│   │   └── edges.csv            # Datos semilla de aristas
+│   ├── scripts/
+│   │   └── load_seed.py         # Script para cargar datos
+│   ├── .env                     # Variables de entorno (NO SUBIR A GIT)
+│   ├── .gitignore
+│   ├── requirements.txt         # Dependencias Python
+│   └── pyproject.toml
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Nodes.jsx        # Gestión de nodos
+│   │   │   ├── Edges.jsx        # Gestión de aristas
+│   │   │   ├── Algorithms.jsx   # BFS y Dijkstra
+│   │   │   ├── CrudSection.css  # Estilos para CRUD
+│   │   │   └── Algorithms.css   # Estilos para algoritmos
+│   │   ├── pages/
+│   │   │   ├── Login.jsx        # Pantalla de login
+│   │   │   ├── Login.css
+│   │   │   ├── Home.jsx         # Dashboard principal
+│   │   │   └── Home.css
+│   │   ├── api.js               # Cliente HTTP (Axios)
+│   │   ├── App.jsx              # Rutas de la aplicación
+│   │   ├── main.jsx             # Punto de entrada React
+│   │   └── index.css            # Estilos globales
+│   ├── public/
+│   ├── .env                     # Variables de entorno (NO SUBIR A GIT)
+│   ├── .gitignore
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
+│
+├── README.md                    # Este archivo
+\`\`\`
 
 
 ---
